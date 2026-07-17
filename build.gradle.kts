@@ -24,7 +24,7 @@ object ModInfo {
 
     const val mod_id = "moddisabler"
     const val mod_name = "Mod Disabler"
-    const val mod_license = "All Rights Reserved"
+    const val mod_license = "MIT"
     const val mod_version = "1.0.0"
     const val mod_group_id = "dev.bluesheep.moddisabler"
 
