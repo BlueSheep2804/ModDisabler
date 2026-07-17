@@ -18,15 +18,15 @@ object ModInfo {
     const val minecraft_version_range = "[1.21.1,)"
     const val neoforge_version = "21.1.235"
     const val neoforge_version_range = "[21.1,)"
-    const val loader_version_range = "[5.9,)"
+    const val loader_version_range = ""
     const val parchment_minecraft_version = minecraft_version
     const val parchment_mappings_version = "2024.11.17"
 
-    const val mod_id = "examplemod"
-    const val mod_name = "Example Mod"
+    const val mod_id = "moddisabler"
+    const val mod_name = "Mod Disabler"
     const val mod_license = "All Rights Reserved"
     const val mod_version = "1.0.0"
-    const val mod_group_id = "dev.bluesheep.examplemod"
+    const val mod_group_id = "dev.bluesheep.moddisabler"
 
     const val curseforge_project_id = ""
     const val modrinth_project_id = ""
@@ -135,13 +135,6 @@ configurations.runtimeClasspath {
 
 repositories {
     maven {
-        name = "Kotlin for Forge"
-        url = uri("https://thedarkcolour.github.io/KotlinForForge/")
-        content {
-            includeGroup("thedarkcolour")
-        }
-    }
-    maven {
         name = "Modrinth"
         url = uri("https://api.modrinth.com/maven")
         content {
@@ -151,8 +144,6 @@ repositories {
 }
 
 dependencies {
-    implementation("thedarkcolour:kotlinforforge-neoforge:5.9.0")
-
     runtimeOnly("maven.modrinth:ferrite-core:x7kQWVju")
     runtimeOnly("maven.modrinth:jei:UJRXzDfp")
 }
