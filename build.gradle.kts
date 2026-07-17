@@ -146,6 +146,8 @@ repositories {
 dependencies {
     runtimeOnly("maven.modrinth:ferrite-core:x7kQWVju")
     runtimeOnly("maven.modrinth:jei:UJRXzDfp")
+    runtimeOnly("maven.modrinth:emi:5sIPA1To")
+    runtimeOnly("maven.modrinth:tmrv:pEhG9g9P")
 }
 
 var generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {
