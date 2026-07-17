@@ -177,6 +177,12 @@ sourceSets["main"].resources {
     exclude("src/generated/**/.cache")
 }
 
+tasks.named<Jar>("jar").configure {
+    from("LICENSE") {
+        rename { "${it}_${ModInfo.mod_id}" }
+    }
+}
+
 tasks.withType<JavaCompile>().configureEach {
     options.encoding = "UTF-8"
 }
