@@ -28,8 +28,8 @@ object ModInfo {
     const val mod_version = "1.0.0"
     const val mod_group_id = "dev.bluesheep.moddisabler"
 
-    const val curseforge_project_id = ""
-    const val modrinth_project_id = ""
+    const val curseforge_project_id = "1614043"
+    const val modrinth_project_id = "3qRDObpo"
 }
 
 fun getProperty(name: String): String? {
